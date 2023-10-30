@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O antigo rei da Grã-Bretanha</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="menu-lateral">
+        <a href="/index.html">
+            <div class="expandir">
+                <i class="bi bi-house-fill"></i>
+            </div>
+        </a>
+        <ul>
+            <li class="it-menu">
+                <a href="ficha.html">
+                    <span class="icon"><i class="bi bi-card-heading"></i></span>
+                    <span class="txtico">Ficha</span>
+                </a>
+            </li>
+
+            <li class="it-menu">
+                <a href="classes.html">
+                    <span class="icon"><i class="bi bi-fingerprint"></i></span>
+                    <span class="txtico">Classes</span>
+                </a>
+            </li>
+
+            <li class="it-menu">
+                <a href="buffs.html">
+                    <span class="icon"><i class="bi bi-clipboard-plus-fill"></i></span>
+                    <span class="txtico">Buffs</span>
+                </a>
+            </li>
+            <li class="it-menu">
+                <a href="debuffs.html"  style="background-color: #facc01c5;">
+                    <span class="icon"><i class="bi bi-clipboard-minus-fill"></i></span>
+                    <span class="txtico">Debuffs</span>
+                </a>
+            </li>
+            <li class="it-menu">
+                <a href="combate.html">
+                    <span class="icon"><i class="bi bi-shield-shaded"></i></span>
+                    <span class="txtico">Combate</span>
+                </a>
+            </li>
+            <li class="it-menu">
+                <a href="moedas.html">
+                    <span class="icon"><i class="bi bi-coin"></i></span>
+                    <span class="txtico">Moedas</span>
+                </a>
+            </li>
+            <li class="it-menu">
+                <a href="itens.html">
+                    <span class="icon"><i class="bi bi-backpack3-fill"></i></span>
+                    <span class="txtico">Itens</span>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <main>
+        <h2 class="subname">Debuffs</h2>
+        <section>
+            <article>
+                <h3>Concussionamento</h3>
+                <ul class="bflist">
+                   <li>Você ainda se mantem de
+                    pé, mas não consegue
+                    fazer nada. Sua mente está
+                    totalmente vibrando e você
+                    se sente tonto</li> 
+                    <li>Você fica 1 round
+                        vulnerável e sem fazer
+                        nada</li>
+                    <li>Chance para concussionar:
+                        tirar 3 no d3</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Insanidade</h3>
+                <ul class="bflist">
+                   <li>Você perde o controle
+                    sobre suas próprias ações</li> 
+                   <li>Você pode resistir se 7 ou
+                    mais de sagacidade</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Vulnerabilidade</h3>
+                <ul class="bflist">
+                   <li>Dá +2 de acerto</li> 
+                </ul>
+            </article>
+            <article>
+                <h3>Desmaio</h3>
+                <ul class="bflist">
+                   <li>Você cai, ficando
+                    desacordado até alguém te
+                    acordar</li> 
+                   <li>Chance para demaio: tirar
+                    4 no d4</li>
+                   <li>Deixa vulnerável</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Morte</h3>
+                <ul class="bflist">
+                   <li>Você cai, tendo que jogar os dados de
+                    morte.
+                    </li> 
+                   <li>Você tem 6 chances e deve ter 3
+                    sucessos(Tirar 4 ou mais) para sobrevive</li>
+                   <li>As pessoas podem te estabilizar, fazendo
+                    você não precisar dos dados de morte, mas
+                    você permanecerá desacordado até te
+                    curarem</li>
+                   <li>Caso falhe 4 vezes, seu personagem morre</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Veneno</h3>
+                <ul class="bflist">
+                   <li>Após um tempo o veneno começa a agir, e
+                    a cada próximo turno de quem foi
+                    envenenado, ele tomará 1d2 de dano de
+                    veneno após concluir sua ação</li> 
+                </ul>
+            </article>
+            <article>
+                <h3>Doença</h3>
+                <ul class="bflist">
+                   <li>Uma gripe assola o lugar, talvez você possa
+                    ficar gripado, tendo desvantagem na
+                    maioria dos dados</li> 
+                </ul>
+                
+            </article>
+            <article>
+                <h3>Sangramento</h3>
+                <ul class="bflist">
+                   <li>1d2 de dano a cada round que a pessoa
+                    jogar, pode ser estancado apenas com
+                    trapos
+                    </li> 
+                </ul>
+            </article>
+        </section>
+    </main>
+
+
+    <script>
+        let myButton = document.querySelectorAll('.menu-lateral> ul> li >a');
+
+myButton.forEach(function(key){
+    key.addEventListener('click', function(){
+        removeStyles();
+        this.setAttribute('class', 'buttonClicked');
+    });
+})
+
+function removeStyles(){
+    for(let i = 0;i < myButton.length;i++){
+        document.querySelectorAll('.menu-lateral> ul> li >a')[i].removeAttribute('class');
+    }
+}
+
+    </script>
+</body>
+</html>

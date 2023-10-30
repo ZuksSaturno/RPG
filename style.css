@@ -1,0 +1,174 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+/*font-family: 'Courgette', cursive;*/
+
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+/*font-family: 'UnifrakturMaguntia', cursive;*/
+
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    height: 100vh;
+    background-color: rgb(26, 25, 25);
+}
+nav.menu-lateral{
+    /*background: linear-gradient(to right, rgb(80, 52, 0), rgb(233, 181, 84));*/
+    background-color: rgb(37, 36, 36);
+    width: 70px;
+    height: 100%;
+    padding: 40px 0 40px 1%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 4px 0 0   #facc01c5;
+    transition: .5s;
+    overflow: hidden;
+}
+nav.menu-lateral:hover{
+    width: 280px;
+}
+div.expandir{
+    width: 100%;
+    padding-left:10px ;
+}
+div.expandir>i:hover{
+    color: rgba(0, 255, 34, 0.144);
+}
+div.expandir > i {
+    color: aliceblue;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 5px;
+   
+}
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+ul>.it-menu>a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    line-height: 40px;
+    border-radius: 10px;
+    margin-right: 10px;
+    transition: 1s;
+}
+ul>.it-menu>a:hover{
+    color: rgb(255, 253, 112);
+}
+ul>.it-menu>a>.txtico{
+    margin-left: 40px;
+}
+ul>.it-menu>a>.icon>i{
+    font-size: 30px;
+    margin-left: 8px;
+}
+
+.buttonClicked {
+    background-color: #facc01c5;
+    color: black;
+}
+/* PARTE DO CORPO, A PARTE DE CIMA É SÓ O MENU LATERAL*/
+
+main{
+    background-color: rgba(240, 255, 255, 0);
+    margin-left: 74px;
+
+}
+#nomerpg{
+    font-family: 'UnifrakturMaguntia', cursive;
+    text-align: center;
+    padding: 50px 10px 0px 10px;
+    font-size: 70px;
+    color: aliceblue;
+    text-shadow: 2px 2px 3px rgba(255, 255, 0, 0.288);
+}
+#by{
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Courgette', cursive;
+    font-size: 20px;
+
+}
+.subname{
+    font-family: 'UnifrakturMaguntia', cursive;
+    text-align: center;
+    padding: 50px 10px 30px 10px;
+    font-size: 50px;
+    color: aliceblue;
+    text-shadow: 2px 2px 3px rgba(255, 255, 0, 0.288);
+}
+
+.foto-ficha{
+    min-width: 100px;
+    max-width: 30vw;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px #ffff8c49;
+    margin: 10px 10px 10px 10px;
+    display:inline-block;
+    left: 300px;
+    
+}
+p{
+    color: aliceblue;
+    margin: 0px 10px;
+    text-align: center;
+    
+    
+}
+section{
+    text-align: center;
+    color: aliceblue;
+    background-color: #ffff0018;
+    border-radius: 5px;
+    border: 2px solid whitesmoke;
+}
+.class{
+    background-color: #ffff0018;
+    font-size: 20pt;
+    border-radius: 10px;
+    margin: 5px;
+    border: 2px solid whitesmoke;
+}
+.class>p{
+    padding: 10px 0px;
+
+
+}
+ul.bflist{
+    list-style-type: square;
+    text-align: start;
+    margin-left: 20px;
+}
+
+h3{
+    margin: 10px;
+}
+h4{
+    padding: 10px;
+    text-align: start;
+    font-size: 30px;
+    color: aliceblue;
+    text-shadow: 2px 2px 3px rgba(255, 255, 0, 0.288);
+}
+.comb{
+    text-align: justify;
+}
+ul.money{
+    list-style-type: decimal;
+    text-align: start;
+    margin-left: 40px;
+    font-size: 15pt;
+}
+.money>li{
+    padding: 5px;
+    
+}

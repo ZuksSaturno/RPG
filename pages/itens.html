@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O antigo rei da Grã-Bretanha</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="menu-lateral">
+        <a href="/index.html">
+            <div class="expandir">
+                <i class="bi bi-house-fill"></i>
+            </div>
+        </a>
+        <ul>
+            <li class="it-menu">
+                <a href="ficha.html">
+                    <span class="icon"><i class="bi bi-card-heading"></i></span>
+                    <span class="txtico">Ficha</span>
+                </a>
+            </li>
+
+            <li class="it-menu">
+                <a href="classes.html">
+                    <span class="icon"><i class="bi bi-fingerprint"></i></span>
+                    <span class="txtico">Classes</span>
+                </a>
+            </li>
+
+            <li class="it-menu">
+                <a href="buffs.html">
+                    <span class="icon"><i class="bi bi-clipboard-plus-fill"></i></span>
+                    <span class="txtico">Buffs</span>
+                </a>
+            </li>
+            <li class="it-menu">
+                <a href="debuffs.html">
+                    <span class="icon"><i class="bi bi-clipboard-minus-fill"></i></span>
+                    <span class="txtico">Debuffs</span>
+                </a>
+            </li>
+            <li class="it-menu">
+                <a href="combate.html">
+                    <span class="icon"><i class="bi bi-shield-shaded"></i></span>
+                    <span class="txtico">Combate</span>
+                </a>
+            </li>
+            <li class="it-menu">
+                <a href="moedas.html">
+                    <span class="icon"><i class="bi bi-coin"></i></span>
+                    <span class="txtico">Moedas</span>
+                </a>
+            </li>
+            <li class="it-menu">
+                <a href="itens.html"  style="background-color: #facc01c5;">
+                    <span class="icon"><i class="bi bi-backpack3-fill"></i></span>
+                    <span class="txtico">Itens</span>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <main>
+        <h2 class="subname">Itens/Armas</h2>
+        <section>
+            <h2>EM MANUTENÇÃO...</h2>
+        </section>
+
+    </main>
+
+
+
+
+
+
+    <script>
+        let myButton = document.querySelectorAll('.menu-lateral> ul> li >a');
+
+myButton.forEach(function(key){
+    key.addEventListener('click', function(){
+        removeStyles();
+        this.setAttribute('class', 'buttonClicked');
+    });
+})
+
+function removeStyles(){
+    for(let i = 0;i < myButton.length;i++){
+        document.querySelectorAll('.menu-lateral> ul> li >a')[i].removeAttribute('class');
+    }
+}
+
+    </script>
+</body>
+</html>

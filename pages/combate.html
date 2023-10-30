@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O antigo rei da Grã-Bretanha</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="menu-lateral">
+        <a href="/index.html">
+            <div class="expandir">
+                <i class="bi bi-house-fill"></i>
+            </div>
+        </a>
+        <ul>
+            <li class="it-menu">
+                <a href="ficha.html">
+                    <span class="icon"><i class="bi bi-card-heading"></i></span>
+                    <span class="txtico">Ficha</span>
+                </a>
+            </li>
+
+            <li class="it-menu">
+                <a href="classes.html">
+                    <span class="icon"><i class="bi bi-fingerprint"></i></span>
+                    <span class="txtico">Classes</span>
+                </a>
+            </li>
+
+            <li class="it-menu">
+                <a href="buffs.html">
+                    <span class="icon"><i class="bi bi-clipboard-plus-fill"></i></span>
+                    <span class="txtico">Buffs</span>
+                </a>
+            </li>
+            <li class="it-menu">
+                <a href="debuffs.html">
+                    <span class="icon"><i class="bi bi-clipboard-minus-fill"></i></span>
+                    <span class="txtico">Debuffs</span>
+                </a>
+            </li>
+            <li class="it-menu">
+                <a href="combate.html"  style="background-color: #facc01c5;">
+                    <span class="icon"><i class="bi bi-shield-shaded"></i></span>
+                    <span class="txtico">Combate</span>
+                </a>
+            </li>
+            <li class="it-menu">
+                <a href="moedas.html">
+                    <span class="icon"><i class="bi bi-coin"></i></span>
+                    <span class="txtico">Moedas</span>
+                </a>
+            </li>
+            <li class="it-menu">
+                <a href="itens.html">
+                    <span class="icon"><i class="bi bi-backpack3-fill"></i></span>
+                    <span class="txtico">Itens</span>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <main>
+        <h2 class="subname">Combate</h2>
+        <section>
+            <h4>Como os combates funcionam?</h4>
+               <p class="comb">Os participantes rolam dados de iniciativa (1d10) para definir a ordem de jogadas.<br>
+                Todos tem 3 ações: Deslocamento, ação e ação bônus(Ação simples e rápida).<br>
+                Se você Abandonar o combate, você deve desengajar, tomando um golpe de
+                oportunidade.<br>
+                Se o ataque envolve acrobacias, deverá rolar um dado de Agilidade.<br>
+                Durante o combate, você deve rolar um dado de acerto(1d20) somado com sua
+                força.<br><br>
+                Para acertar seu golpe, você deve superar o CA do inimigo.
+                </p> 
+                <ul class="bflist" style="margin-left: 40px;">
+                    <li>Caso tire 1/d20, você erra o ataque</li>
+                    <li>Caso tirar 20/d20, você dá crítico</li>
+                </ul>
+                <br>
+                <p class="comb">Para ataque:</p>
+                <ul class="bflist" style="margin-left: 40px;">
+                <li>Ataque parcial: Deverá rolar 1d20 e superar o CA do inimigo para acertar o
+                    golpe</li>
+                <li>Caso acerte 20/d20, você crita</li>
+                </ul>
+                <br>
+                <p class="comb">O inimigo pode tentar defender ou esquivar
+                </p>
+                <p class="comb">Para defesa: (Multiplicador será força)</p>
+                <ul class="bflist" style="margin-left: 40px;">
+                    <li>Defesa parcial: Deverá rolar 1d20 e superar em 4 os pontos de acerto do
+                        inimigo, reduzindo o dano pela metade</li>
+                    <li>Defesa total: Deverá rolar 1d20 e superar em 6 os pontos de acerto do
+                        inimigo, defendendo do ataque</li>
+                    <li>Contra ataque: Deverá rolar 1d20 e superar em 10 os pontos de acerto do
+                        inimigo, assim, conseguindo contra-atacar
+                        </li>
+                </ul>
+                <br>
+                <p class="comb">Para esquiva: (Multiplicador será Agilidade)
+                </p>
+                <ul class="bflist" style="margin-left: 40px;">
+                    <li>Esquiva parcial: Deverá rolar 1d20 e superar em 4 os pontos de acerto do
+                        inimigo, reduzindo o dano pela metade</li>
+                    <li>Esquiva total: Deverá rolar 1d20 e superar em 6 os pontos de acerto do
+                        inimigo, desviando do ataque</li>
+                    <li>Contra ataque: Deverá rolar 1d20 e superar em 10 os pontos de acerto do
+                        inimigo, assim, conseguindo contra-atacar
+                        </li>
+                </ul>
+                <br>
+                <p class="comb">Contra-ataque:
+                </p>
+                <ul class="bflist" style="margin-left: 40px;">
+                    <li>Você tem uma ação com desvantagem</li>
+                </ul>
+        </section>
+
+    </main>
+
+
+
+
+
+
+    <script>
+        let myButton = document.querySelectorAll('.menu-lateral> ul> li >a');
+
+myButton.forEach(function(key){
+    key.addEventListener('click', function(){
+        removeStyles();
+        this.setAttribute('class', 'buttonClicked');
+    });
+})
+
+function removeStyles(){
+    for(let i = 0;i < myButton.length;i++){
+        document.querySelectorAll('.menu-lateral> ul> li >a')[i].removeAttribute('class');
+    }
+}
+
+    </script>
+</body>
+</html>

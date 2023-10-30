@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O antigo rei da Grã-Bretanha</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="menu-lateral">
+        <a href="/index.html">
+            <div class="expandir">
+                <i class="bi bi-house-fill"></i>
+            </div>
+        </a>
+        <ul>
+            <li class="it-menu">
+                <a href="ficha.html" style="background-color: #facc01c5;">
+                    <span class="icon"><i class="bi bi-card-heading"></i></span>
+                    <span class="txtico">Ficha</span>
+                </a>
+            </li>
+
+            <li class="it-menu">
+                <a href="classes.html">
+                    <span class="icon"><i class="bi bi-fingerprint"></i></span>
+                    <span class="txtico">Classes</span>
+                </a>
+            </li>
+
+            <li class="it-menu">
+                <a href="buffs.html">
+                    <span class="icon"><i class="bi bi-clipboard-plus-fill"></i></span>
+                    <span class="txtico">Buffs</span>
+                </a>
+            </li>
+            <li class="it-menu">
+                <a href="debuffs.html">
+                    <span class="icon"><i class="bi bi-clipboard-minus-fill"></i></span>
+                    <span class="txtico">Debuffs</span>
+                </a>
+            </li>
+            <li class="it-menu">
+                <a href="combate.html">
+                    <span class="icon"><i class="bi bi-shield-shaded"></i></span>
+                    <span class="txtico">Combate</span>
+                </a>
+            </li>
+            <li class="it-menu">
+                <a href="moedas.html">
+                    <span class="icon"><i class="bi bi-coin"></i></span>
+                    <span class="txtico">Moedas</span>
+                </a>
+            </li>
+            <li class="it-menu">
+                <a href="itens.html">
+                    <span class="icon"><i class="bi bi-backpack3-fill"></i></span>
+                    <span class="txtico">Itens</span>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <main>
+        <h2 class="subname">Ficha Dos Personagems</h2>
+        <section>
+            <img src="/imagens/capa.jpg" alt="capa" class="foto-ficha">
+
+            <p>A ficha de personagem no RPG serve para registrar e organizar as informações essenciais sobre um personagem fictício, como suas habilidades, características, histórico e equipamento, para que os jogadores e o mestre do jogo possam acompanhar e interpretar o personagem de maneira consistente durante a aventura.</p>
+
+            <img src="/imagens/page1.jpg" alt="capa" class="foto-ficha">
+
+            <p>Atributos:<br>
+                PV - Pontos de vida
+                5d3<br>
+                CA - Classe de Armadura<br>
+                Desl - Deslocamento (4 de
+                Desl. base)<br>
+                Inic - Iniciativa
+                </p>
+
+            <img src="/imagens/page2.jpg" alt="capa" class="foto-ficha">
+
+            <p>Todos os participantes tem 18 pontos para
+                distribuir em:<br>
+                Str - Força
+                Soma em acerto com armas de
+                Curto/Médio alcance<br>
+                Agl - Agilidade
+                Soma com Deslocamento<br>
+                Sag - Sagacidade<br>
+                Per - Percepção<br>
+                Precisão: Soma em acerto com armas de
+                longo alcance<br>
+                Fur - Furtividade
+                </p>
+
+        </section>
+    </main>
+
+
+
+
+
+
+
+    <script>
+        let myButton = document.querySelectorAll('.menu-lateral> ul> li >a');
+
+myButton.forEach(function(key){
+    key.addEventListener('click', function(){
+        removeStyles();
+        this.setAttribute('class', 'buttonClicked');
+    });
+})
+
+function removeStyles(){
+    for(let i = 0;i < myButton.length;i++){
+        document.querySelectorAll('.menu-lateral> ul> li >a')[i].removeAttribute('class');
+    }
+}
+
+    </script>
+</body>
+</html>
